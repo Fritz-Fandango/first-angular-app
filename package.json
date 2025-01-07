@@ -1,6 +1,23 @@
 {
   "name": "first-angular-app",
-  "version": "0.0.0",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Angular course project files",
+  "keywords": [
+    "Angular"
+  ],
+  "homepage": "https://github.com/fritz-fandango/first-angular-app#readme",
+  "bugs": {
+    "url": "https://github.com/fritz-fandango/first-angular-app/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fritz-fandango/first-angular-app.git"
+  },
+  "license": "ISC",
+  "author": "Martin Moreno",
+  "type": "commonjs",
+  "main": "index.js",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -8,7 +25,6 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
-  "private": true,
   "dependencies": {
     "@angular/animations": "^18.2.0",
     "@angular/common": "^18.2.0",
