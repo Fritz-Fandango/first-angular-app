@@ -1,0 +1,41 @@
+div {
+  border-radius: 6px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+button {
+  align-items: center;
+  background-color: #433352;
+  border: none;
+  color: #c3b3d1;
+  cursor: pointer;
+  display: flex;
+  font: inherit;
+  gap: 0.5rem;
+  min-width: 10rem;
+  padding: 0.35rem 0.5rem;
+  text-align: left;
+  width: 100%;
+}
+
+button:hover,
+button:active,
+.active {
+  background-color: #9965dd;
+  color: #150722;
+}
+
+img {
+  border-radius: 50%;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+  object-fit: contain;
+  width: 2rem;
+}
+
+span {
+  font-size: 0.8rem;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
