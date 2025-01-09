@@ -1,4 +1,4 @@
-import { Component, computed, input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { DUMMY_USERS } from '../dummy-users';
 
 const randomIndex = Math.floor(Math.random() * DUMMY_USERS.length);
@@ -10,18 +10,12 @@ const randomIndex = Math.floor(Math.random() * DUMMY_USERS.length);
   styleUrl: './user.component.scss',
 })
 export class UserComponent {
-  // @Input({ required: true }) avatar!: string;
-  // @Input({ required: true }) name!: string;
-  avatar = input.required<string>();
-  name = input.required<string>();
+  @Input({ required: true }) avatar!: string;
+  @Input({ required: true }) name!: string;
 
-  imagePath = computed(() => {
-    return 'assets/users/' + this.avatar();
-  });
-
-  // get imagePath() {
-  //   return 'assets/users/' + this.avatar;
-  // }
+  get imagePath() {
+    return 'assets/users/' + this.avatar;
+  }
 
   onSelectUser() {}
 }
