@@ -5,11 +5,10 @@ import { TasksComponent } from './tasks/tasks.component';
 import { UserComponent } from './user/user.component';
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [HeaderComponent, UserComponent, TasksComponent],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss',
+    selector: 'app-root',
+    imports: [HeaderComponent, UserComponent, TasksComponent],
+    templateUrl: './app.component.html',
+    styleUrl: './app.component.scss'
 })
 export class AppComponent {
   title = 'first-angular-app';

@@ -3,11 +3,10 @@ import { FormsModule } from '@angular/forms';
 import { TasksService } from '../tasks.service';
 
 @Component({
-  selector: 'app-new-task',
-  standalone: true,
-  imports: [FormsModule],
-  templateUrl: './new-task.component.html',
-  styleUrl: './new-task.component.scss',
+    selector: 'app-new-task',
+    imports: [FormsModule],
+    templateUrl: './new-task.component.html',
+    styleUrl: './new-task.component.scss'
 })
 export class NewTaskComponent {
   @Input({ required: true }) userId!: string;
